@@ -21,12 +21,6 @@ class MemorialHall(models.Model):
     def __str__(self) :
         return self.name
     
-    def save(self, *args, **kwargs):
-        if self.private and not self.token:
-            self.token = uuid.uuid4()
-        elif not self.private:
-            self.token = None  # 비공개가 아닌 경우 토큰을 제거
-        super(MemorialHall, self).save(*args, **kwargs)
 
 #헌화하기
 class Wreath(models.Model):
@@ -44,6 +38,7 @@ class Wreath(models.Model):
     
     def __str__(self):
         return self.name
+
 
 #헌화 공간 밑 추모글 
 class Message(models.Model):

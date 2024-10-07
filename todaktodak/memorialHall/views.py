@@ -11,6 +11,7 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework import status 
 from rest_framework.test import APIRequestFactory 
+from badwords.models import BadWord
 
 #추모관 페이지네이션(한페이지 6개 추모관)
 class MemorialHallViewSet(ModelViewSet) :
@@ -236,9 +237,27 @@ class MessageViewSet(ModelViewSet):
         return super().get_permissions()
     
     def perform_create(self, serializer):
-        serializer.save(nickname = self.request.user)
+        # 비속어 필터링 및 대체
+        content = serializer.validated_data.get('content', '')  # 추모글 내용
+        sanitized_content = self.replace_bad_words(content)
+        #print(f'sanitized_content word: {sanitized_content}')  #테스트 로그
+        serializer.save(nickname=self.request.user, content=sanitized_content)
+
+    def replace_bad_words(self, content):
+        bad_words = BadWord.objects.values_list('word', flat=True)
+        # for bad_word in bad_words:
+        #     content = content.replace(bad_word, '❤️')  # 비속어를 하트로 대체
+        # return content
+        # 비속어가 포함된 문장을 하트로 대체
+        for bad_word in bad_words:
+            # 비속어가 포함된 전체 문장을 찾습니다.
+            if bad_word in content:
+                # 전체 문장을 하트로 대체
+                content = '❤️' * content.count(bad_word)  # 비속어가 몇 번 등장하는지에 따라 하트로 대체
+
+        return content
     
-    def get_queryset(self, **kwargs): # Override, 4
+    def get_queryset(self, **kwargs): 
         id = self.kwargs['memorialHall_id']
         return self.queryset.filter(hall=id).order_by('-created_at')
     #memorialHall로 MemorialHall과 foriegnkey연결시켰더니 인식 못하는 오류!!

@@ -38,11 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
 
     # app
     'accounts',
     'rememberTree',
     'memorialHall',
+    'badwords',
 
     #django rest framework
     'rest_framework',
@@ -58,6 +60,7 @@ INSTALLED_APPS = [
     "allauth.socialaccount.providers.google",    
     "allauth.socialaccount.providers.kakao",
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

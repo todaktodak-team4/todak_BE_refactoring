@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from rest_framework.serializers import ModelSerializer
-from .models import rememberTree, Photo, Question, UserQuestionAnswer,Letters
+from .models import rememberTree, Photo, Question, UserQuestionAnswer,Letters, UserEmotion,DailyQuestion
 from accounts.serializers import UserAdditionalInfoSerializer
  
 class RememberSerializer(ModelSerializer):
@@ -21,12 +21,32 @@ class QuestionSerializer(ModelSerializer):
         model = Question
         fields = '__all__'
 
-class AnswerSerializer(ModelSerializer):
+class QuestionSerializer(serializers.ModelSerializer):
     class Meta:
-        model = UserQuestionAnswer
-        fields = '__all__'
+        model = Question  # Replace with your actual Question model
+        fields = ['id', 'question_text']  # Adjust fields as needed
+
+class DailyQuestionSerializer(serializers.ModelSerializer):
+    question = QuestionSerializer()  # Use the nested serializer for the question
+
+    class Meta:
+        model = DailyQuestion
+        fields = ['id', 'user', 'question', 'date_asked']
 
     
+    
+class UserQuestionAnswerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserQuestionAnswer
+        fields = ['id', 'user', 'question', 'answer_text', 'date_answered', 'source_type']
+    
+
+class UserEmotionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserEmotion
+        fields = ['id', 'user', 'emotion_type', 'created_at']
+
+
 class LetterSerializer(serializers.ModelSerializer):
     writer = UserAdditionalInfoSerializer(read_only=True)
 
@@ -38,3 +58,4 @@ class LetterSerializer(serializers.ModelSerializer):
     class Meta:
         model = Letters
         fields = ['id', 'content', 'remember_tree', 'writer', 'uploaded_at']
+

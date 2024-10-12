@@ -245,6 +245,7 @@ TIME_ZONE = 'Asia/Seoul'
 
 import os, json
 from django.core.exceptions import ImproperlyConfigured
+from dotenv import load_dotenv
 
 secret_file = os.path.join(BASE_DIR, 'secrets.json') # secrets.json 파일 위치
 
@@ -259,3 +260,8 @@ def get_secret(setting, secrets=secrets):
         raise ImproperlyConfigured(error_msg)
 
 SECRET_KEY = get_secret("SECRET_KEY")
+
+
+load_dotenv()  # .env 파일의 내용을 로드
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")  # 환경 변수 가져오기

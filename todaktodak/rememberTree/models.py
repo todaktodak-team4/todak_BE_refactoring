@@ -45,22 +45,52 @@ class Question(models.Model):
 
     def __str__(self):
         return self.question_text
-    
 
-# 답변 모델
-class UserQuestionAnswer(models.Model):
-    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='user_question_answers')
-    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='user_question_answers')
-    answer_text = models.TextField()
-    date_answered = models.DateField(default=timezone.now)
-
-    class Meta:
-        unique_together = ('user', 'date_answered')  
+#매일 질문 하나씩
+class DailyQuestion(models.Model):
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='user_daily_question')
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    date_asked = models.DateField(auto_now_add=True)  # Automatically set to now when created
 
     def __str__(self):
-        return f"Answer by {self.user.username} to {self.question.question_text} on {self.date_answered}"
-    
+        return f"{self.user.username} - {self.question.question_text} on {self.date_asked}"
 
+# 대화 모델
+class UserQuestionAnswer(models.Model):
+    QUESTION_SOURCE_CHOICES = [
+        ('PREDEFINED', 'Predefined Question'),  # Question from the Question model
+        ('AI', 'AI-generated Question'),  # AI-generated question
+    ]
+    
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='user_question_answers')
+    question = models.TextField()  # This will store both predefined and AI-generated questions
+    answer_text = models.TextField()
+    date_answered = models.DateField(default=timezone.now)
+    source_type = models.CharField(max_length=10, choices=QUESTION_SOURCE_CHOICES, default='PREDEFINED')
+
+    class Meta:
+        unique_together = ('user', 'date_answered', 'question')  # Ensure unique answers per day
+
+    def __str__(self):
+        return f"Answer by {self.user.username} to {self.question} on {self.date_answered} (Source: {self.source_type})"
+
+# 감정 모델
+class UserEmotion(models.Model):
+    EMOTION_TYPE_CHOICES = [
+        ('DENIAL', 'Denial'),
+        ('ANGER', 'Anger'),
+        ('BARGAINING', 'Bargaining'),
+        ('DEPRESSION', 'Depression'),
+        ('ACCEPTANCE', 'Acceptance'),
+    ]
+    
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='emotions')
+    emotion_type = models.CharField(max_length=20, choices=EMOTION_TYPE_CHOICES)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.user.username}'s emotion: {self.emotion_type} at {self.created_at}"
+    
 #편지모델
 class Letters(models.Model):
     content = models.TextField(max_length=780, null = False)

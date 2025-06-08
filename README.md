@@ -14,6 +14,69 @@
 
 
 - **배포 링크** : http://3.38.125.151/
+
+
+| 회원가입 1단계 | 회원가입 2단계 | 로그인 |
+|:-:|:-:|:-:|
+| <img src="https://github.com/user-attachments/assets/7dee2674-c3db-44f5-81d7-96d5e18a47ed" alt="회원가입 1단계" width="450"/> | <img src="https://github.com/user-attachments/assets/539d8620-c914-48ad-8fc6-2c8aa3261142" alt="회원가입 2단계" width="450"/> | <img src="https://github.com/user-attachments/assets/916b42a0-ce02-4356-a762-922e21c87ea3" alt="로그인" width="450"/>
+
+
+| 온라인 헌화 추모관 신청 | 헌화 추모관 목록 | 내가 참여한 추모관 |
+|:-:|:-:|:-:|
+| <img src="https://github.com/user-attachments/assets/91e0c30e-b6ab-48dc-af92-ed8cc372141a" alt="온라인 헌화 추모관 신청" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/91e0c30e-b6ab-48dc-af92-ed8cc372141a" alt="헌화추모관목록" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/13cf4200-99c0-48aa-9a7a-f17f8f57ad30" alt="내가참여한추모관" width="450" height="190"/>
+
+
+| 추모관 검색 | 추모관 상세조회 | 헌화하기 |
+|:-:|:-:|:-:|
+| <img src="https://github.com/user-attachments/assets/3670f900-d8a7-44e1-852c-57c9e776c4c2" alt="추모관 검색" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/ee1a1140-018f-4319-b400-264e367f28ac" alt="추모관 상세조회" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/88f98c8d-60f0-4c39-9708-e7aa06ea5158" alt="헌화하기" width="450" height="190"/>
+
+
+| 헌화 | 헌화 한마디 | 헌화 결제 |
+|:-:|:-:|:-:|
+| <img src="https://github.com/user-attachments/assets/88f98c8d-60f0-4c39-9708-e7aa06ea5158" alt="헌화하기" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/b1ff99e8-a894-4eff-b7c7-3553efe49177" alt="추모관 검색" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/fe46d5ee-2cfe-491c-a629-7462af3653e7" alt="결제" width="450" height="190"/>
+
+
+| 기부증서 | 추모의 글 | 추모의 글 공감 |
+|:-:|:-:|:-:|
+| <img src="https://github.com/user-attachments/assets/0a4563d9-b4c5-4a54-97d9-87d6ad360a82" alt="기부증서" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/2efafd0f-027a-482f-878a-5098de90bd92" alt="추모관 글" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/baf5e170-2175-430a-a13c-bd1a65a027f97" alt="공감버튼" width="450" height="190"/>
+
+
+| 기억나무 심기 1단계 | 기억나무 심기 2단계 | 심기완료 모달창|
+|:-:|:-:|:-:|
+| <img src="https://github.com/user-attachments/assets/a383b6ea-f152-419d-8aba-44d942c5d2d5" alt="기억나무 심기 1단계" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/75edaaa5-fffc-48ba-96f3-71d97bdce0eb" alt="기억나무 심기 2단계" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/309cfe2b-1ccb-4a05-90db-f857f9d4d3fd" alt="심기완료모달창" width="450" height="190"/>
+
+
+
+| 기억나무 화면 | 기억나무 이용가이드 1 | 기억나무 이용가이드 2   |
+|:-:|:-:|:-:|
+ | <img src="https://github.com/user-attachments/assets/0c0c1536-1eba-4012-9a97-f800da6d8d62" alt="기억나무 화면" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/b09f7ef2-10b7-43c7-b3e9-1036bf038ed2" alt="기억나무 이용가이드 1" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/57b2af31-ee59-428a-9c5c-2a7cb9aa1d9f" alt="기억나무 이용가이드 2" width="450" height="190"/>
+
+
+| 기억나무와 대화 | 기억나무 사진 업로드 | 기억나무 앨범 조회  |
+|:-:|:-:|:-:|
+| <img src="https://github.com/user-attachments/assets/48ada701-32ff-45da-9c78-c9b8c2170724" alt="기억나무와 대화하기" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/06f6a99d-1c76-4b3d-bcdd-1aee9cfdf209" alt="기억나무 사진 업로드 " width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/086eb627-9676-4ed6-9744-8b9c56095b6a" alt="기억나무 앨범 조회" width="450" height="190"/>
+
+| 기억나무 편지 작성 | 기억나무 편지 조회 | 기억나무 편지 전달 |
+|:-:|:-:|:-:|
+| <img src="https://github.com/user-attachments/assets/d07d35b6-dfd0-4127-9367-f19382e7b1e0" alt="기억나무 편지 작성" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/ce70f2a4-caad-480a-bb86-e745654b65de" alt="기억나무 편지 조회" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/fb44b17c-697c-4b44-bd98-741f680be0ae" alt="기억나무 편지 전달 모달창" width="450" height="190"/>
+
+| 마이페이지 | 내가 남긴 추모글 | 헌화 내역 |
+|:-:|:-:|:-:|
+| <img src="https://github.com/user-attachments/assets/7ff92c0a-605c-413c-aa11-81f72ab99956" alt="마이페이지" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/1b0a3edd-4630-4cc9-9ba6-a45132e3ab7c" alt="내가 남긴 추모글" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/4df25844-6516-45a6-b4f4-29bc781f85ac" alt=" 헌화 내역" width="450" height="190"/>
+
+
+| 개인정보수정 | 기억나무 배송 | 배송지 입력 |
+|:-:|:-:|:-:|
+| <img src="https://github.com/user-attachments/assets/03fe671c-f146-402f-9fe3-64746f742c4f" alt="개인정보수정" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/b7e278a8-035d-4ff8-9e4a-1568e0ff385b" alt="기억나무 배송" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/85292a07-1cbc-4106-8e9f-c86334d91f50" alt="배송지 입력" width="450" height="190"/>
+
+
+| 배송 결제 | 배송신청 완료 모달창| 메인 화면 |
+|:-:|:-:|:-:|
+| <img src="https://github.com/user-attachments/assets/8e6039bd-171a-4646-8c3a-b15ed53c6abd" alt="결제" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/6833f76c-cb0a-4ada-868a-90ca8d709012" alt="배송신청 완료 모달창" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/63ddc9e5-57bc-472d-8d4a-98040e6d5179" alt="메인 화면" width="450" height="190"/>
+
+
+
+
 - **기술 스택**
 
   <span>프론트엔드: </span> <img src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">

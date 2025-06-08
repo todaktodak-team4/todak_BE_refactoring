@@ -1,9 +1,7 @@
 
-# todaktodak
-### 재난 경험자와 유족의 건강한 애도를 돕는 추모 서비스 '토닥토닥'
+# 재난 경험자와 유족의 건강한 애도를 돕는 추모 서비스 '토닥토닥' todaktodak
 
 ### 📙 프로젝트 소개
-
 
 ![서비스소개페이지](https://github.com/user-attachments/assets/5984d787-e482-4bc6-a639-a0937d26d453)
 - **서비스 소개**
@@ -75,15 +73,24 @@
 | <img src="https://github.com/user-attachments/assets/8e6039bd-171a-4646-8c3a-b15ed53c6abd" alt="결제" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/6833f76c-cb0a-4ada-868a-90ca8d709012" alt="배송신청 완료 모달창" width="450" height="190"/> | <img src="https://github.com/user-attachments/assets/63ddc9e5-57bc-472d-8d4a-98040e6d5179" alt="메인 화면" width="450" height="190"/>
 
 
+### erd
 
+![myapp_erd](https://github.com/user-attachments/assets/1d0d85ad-4c00-46e7-93b5-6e5425e2e741)
 
-- **기술 스택**
+## 🛠️ 기술 스택
 
-  <span>프론트엔드: </span> <img src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+- Django: 5.0.7  
+- Django REST Framework: 3.15.2  
+- django-allauth: 0.63.6  
+- django-cors-headers: 4.4.0  
+- djangorestframework-simplejwt: 5.3.1  
+- Pillow: 10.4.0  
+- python-dotenv: 1.0.1  
+- openai: 0.28  
+- requests: 2.32.3  
+- cryptography: 43.0.0  
+- asgiref: 3.8.1  
 
-  <span>백엔드: </span><img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=Django&logoColor=white">
-
-  <span>기획·디자인: </span> <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
 
 - **팀원 소개**
   <table border="" cellspacing="0" cellpadding="0" width="100%">
